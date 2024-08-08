@@ -1,0 +1,117 @@
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.cameras {
+  text-decoration: none;
+  position: relative;
+  line-height: 24px;
+  font-weight: 800;
+  color: inherit;
+  z-index: 1;
+}
+.camerasBackground {
+  height: 6px;
+  flex: 1;
+  position: relative;
+  background-color: var(--color-dodgerblue-100);
+  z-index: 1;
+}
+.camerasContent,
+.camerasParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.camerasContent {
+  width: 77px;
+  flex-direction: row;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.camerasParent {
+  flex-direction: column;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-5xs);
+}
+.cameraFeedGridWrapper {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.cameraFeedGridWrapper,
+.dashboard,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 67px;
+  max-width: calc(100% - 400px);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-manrope);
+}
+.dashboard {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  background-color: var(--color-gray-300);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-38xl) 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-112xl-7);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard {
+    gap: var(--gap-47xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .cameras {
+    font-size: var(--font-size-10xl);
+    line-height: 19px;
+  }
+  .frameParent {
+    gap: var(--gap-14xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    max-width: 100%;
+  }
+  .dashboard {
+    gap: var(--gap-14xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cameras {
+    font-size: var(--font-size-3xl);
+    line-height: 14px;
+  }
+  .frameParent {
+    gap: var(--gap-mid);
+  }
+  .dashboard {
+    height: auto;
+    gap: var(--gap-base);
+  }
+}

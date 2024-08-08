@@ -1,0 +1,160 @@
+.cameraIcon {
+  height: 25px;
+  width: 20px;
+  position: relative;
+}
+.cameraIconPadding {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cameraIconPaddingWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xl);
+}
+.camera1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 72px;
+}
+.camerasTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.cameraLiveIcon {
+  width: 38px;
+  height: 23px;
+  position: relative;
+}
+.cameraItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-7xs) 0 0;
+}
+.personCount,
+.personIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+}
+.personCount {
+  left: 19px;
+  border-radius: 50%;
+  background-color: var(--color-tomato-100);
+  border: 0 solid var(--color-white);
+  box-sizing: border-box;
+  width: 9px;
+  height: 9px;
+  z-index: 1;
+}
+.cameraPersons {
+  width: 28px;
+  height: 23px;
+  position: relative;
+}
+.cameraData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.vectorIcon {
+  height: 29px;
+  width: 29px;
+  position: relative;
+}
+.cameraItemParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.detailsPlaceholder {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 13px;
+}
+.detailsPlaceholderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs) 0 0;
+}
+.detailsNumber,
+.detailsNumber1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 16px;
+}
+.detailsNumber1 {
+  min-width: 17px;
+}
+.cameraDetails,
+.detailsLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.detailsLabel {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.cameraDetails {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xs) 0 var(--padding-smi);
+}
+.camerasContent {
+  width: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+  text-align: center;
+}
+.camerasHeader {
+  align-self: stretch;
+  background-color: var(--color-dodgerblue-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-9xl) var(--padding-24xl) var(--padding-9xl)
+    var(--padding-26xl);
+  gap: var(--gap-xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-smi-9);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .camerasHeader {
+    flex-wrap: wrap;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

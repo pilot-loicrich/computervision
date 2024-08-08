@@ -1,0 +1,211 @@
+.subtractIcon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.abnormalitiesMetric,
+.notifications {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  z-index: 2;
+}
+.abnormalitiesMetric {
+  width: 55px;
+  font-weight: 800;
+}
+.notifications {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  min-width: 125px;
+}
+.insightsMetrics {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-42xl) var(--padding-8xl) var(--padding-18xl);
+  position: relative;
+  gap: var(--gap-6xl);
+}
+.subtractIcon1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.abnormalitiesCaptured {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+  z-index: 2;
+}
+.abnormalitiesCapturedWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-30xl) 0 0;
+}
+.div {
+  width: 56px;
+  position: relative;
+  font-size: var(--font-size-33xl);
+  line-height: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-left: -55px;
+}
+.frameChild,
+.insightsMetrics1 {
+  align-self: stretch;
+  position: relative;
+}
+.insightsMetrics1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-42xl) var(--padding-7xl) var(--padding-18xl);
+  font-size: var(--font-size-xl);
+}
+.frameChild {
+  height: 249px;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: none;
+}
+.activityItemChild {
+  height: 27px;
+  width: 138px;
+  position: relative;
+  backdrop-filter: blur(4px);
+  background-color: var(--color-dodgerblue-200);
+  display: none;
+}
+.camera1 {
+  position: relative;
+  line-height: 24px;
+  font-weight: 800;
+  display: inline-block;
+  min-width: 87px;
+  z-index: 2;
+}
+.activityItem,
+.activityItemItem {
+  backdrop-filter: blur(4px);
+  background-color: var(--color-dodgerblue-200);
+}
+.activityItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-6xl) var(--padding-10xs);
+  white-space: nowrap;
+  z-index: 1;
+}
+.activityItemItem {
+  height: 27px;
+  width: 151px;
+  position: relative;
+  display: none;
+}
+.date12062025 {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 126px;
+  z-index: 2;
+}
+.activityItem1,
+.insightsMetricsParent,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.activityItem1 {
+  backdrop-filter: blur(4px);
+  background-color: var(--color-dodgerblue-200);
+  flex-direction: row;
+  padding: var(--padding-11xs) var(--padding-xs) var(--padding-12xs);
+  white-space: nowrap;
+  z-index: 1;
+  font-size: var(--font-size-3xs);
+}
+.insightsMetricsParent,
+.rectangleParent {
+  flex-direction: column;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  padding: 0 var(--padding-10xs);
+  gap: var(--gap-170xl);
+  background-image: url(/public/rectangle-63@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+  font-size: var(--font-size-base);
+}
+.insightsMetricsParent {
+  flex: 1;
+  gap: var(--gap-38xl);
+  min-width: 278px;
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-33xl);
+  color: var(--color-white);
+  font-family: var(--font-manrope);
+}
+@media screen and (max-width: 750px) {
+  .abnormalitiesMetric,
+  .div {
+    font-size: var(--font-size-23xl);
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .abnormalitiesMetric {
+    font-size: var(--font-size-12xl);
+    line-height: 14px;
+  }
+  .abnormalitiesCaptured,
+  .notifications {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+  .div {
+    font-size: var(--font-size-12xl);
+    line-height: 14px;
+  }
+  .insightsMetricsParent {
+    gap: var(--gap-9xl);
+  }
+}

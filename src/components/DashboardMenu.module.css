@@ -1,0 +1,41 @@
+.icdashboardIcon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dashboardIconPadding {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base);
+}
+.dashboard {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 72px;
+}
+.dashboardIconPaddingParent,
+.dashboardMenu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboardIconPaddingParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  cursor: pointer;
+}
+.dashboardMenu {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-20xl);
+  text-align: center;
+  font-size: var(--font-size-smi-9);
+  color: var(--color-dodgerblue-100);
+  font-family: var(--font-poppins);
+}

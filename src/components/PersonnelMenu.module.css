@@ -1,0 +1,43 @@
+.icrecruitmentIcon {
+  height: 29px;
+  width: 33px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.icrecruitmentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lgi) 0 var(--padding-sm);
+}
+.personnel {
+  position: relative;
+  line-height: 19.34px;
+  display: inline-block;
+  min-width: 66px;
+  flex-shrink: 0;
+}
+.frameParent,
+.personnelMenu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xl-8);
+  cursor: pointer;
+}
+.personnelMenu {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-23xl);
+  text-align: left;
+  font-size: var(--font-size-smi-9);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-poppins);
+}

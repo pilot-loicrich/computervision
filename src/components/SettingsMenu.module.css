@@ -1,0 +1,36 @@
+.icsettingsIcon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.setttings {
+  align-self: stretch;
+  position: relative;
+  line-height: 17.1px;
+  display: inline-block;
+  min-width: 61px;
+}
+.icsettingsParent,
+.settingsMenu {
+  display: flex;
+  justify-content: flex-start;
+}
+.icsettingsParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-4xs-6);
+}
+.settingsMenu {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-26xl) 0 var(--padding-25xl);
+  text-align: center;
+  font-size: var(--font-size-smi-9);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-poppins);
+}
